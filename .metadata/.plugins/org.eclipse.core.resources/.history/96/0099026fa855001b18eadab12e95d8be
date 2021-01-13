@@ -10,19 +10,9 @@ public class Conta {
 	
 	public void depositar(double valorDeposito) {
 		
-		saldo = saldo + valorDeposito;
-		
-		if (valorDeposito > 0) {
-			saldo = saldo + valorDeposito;
-		} else {
-			System.out.println("Valor inválido!!!");
-		}
+		saldo = valorDeposito;
 		
 		
-	}
-	
-	public void mostrarSaldoDaConta() {
-		System.out.println("Saldo: " + saldo);
 	}
 	
 	public void sacar( ) {
