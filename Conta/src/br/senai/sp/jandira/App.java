@@ -6,66 +6,37 @@ public class App {
 
 	public static void main(String[] args) {
 	
-		Conta contaDaMaria = new Conta();
+		Conta contaDaAna = new Conta();
+		Conta contaDoJoao = new Conta();
 		
-		Conta contaDoJoao;
-		contaDoJoao = new Conta ();
-	 
-		
-		// Determinar os dados da conta da Maria
-		contaDaMaria.numero = "100-85";
-		contaDaMaria.titular = "Maria da Silva";
-		contaDaMaria.tipo = "Corrente";
-		contaDaMaria.ativa = true;
-		contaDaMaria.depositar(100);
-		
-		// Determinar o dados da conta do João
-		contaDoJoao.numero = "200-96";
-		contaDoJoao.titular = "João Almeida";
-		contaDoJoao.tipo = "Poupança";
-		contaDoJoao.ativa = true;
-		contaDoJoao.depositar(200);
+		contaDaAna.titular = "Ana Gomes";
+		contaDaAna.numero = "111-98";
+	    contaDaAna.tipo = "Corrente";
+	    contaDaAna.ativa = true;
+	    contaDaAna.chequeEspecial = 200;
+	    contaDaAna.depositar(100);
+	    contaDaAna.mostrarSaldoDaConta();
+	    contaDaAna.depositar(30);
+	    contaDaAna.mostrarSaldoDaConta();
+	    contaDaAna.sacar(50);
+	    contaDaAna.mostrarSaldoDaConta();
+	    contaDaAna.sacar(500);
+	    contaDaAna.mostrarSaldoDaConta();
+	    contaDaAna.sacar(50);
+	    contaDaAna.mostrarSaldoDaConta();
+	    contaDaAna.sacar(80);
+	    contaDaAna.mostrarSaldoDaConta();
+	    contaDaAna.depositar(100);
+	    contaDaAna.mostrarSaldoDaConta();
+	    contaDaAna.getSaldo();
 	    
-	    // Ver o saldo das contas com o nome 
-	    System.out.println("Titular: " + contaDaMaria.titular);
-	    contaDaMaria.mostrarSaldoDaConta();
-	    System.out.println("--------------------------------");
-	    System.out.println("Titular: " + contaDoJoao.titular);
-	    contaDoJoao.mostrarSaldoDaConta();
-	    System.out.println("-------------------------------");
+	    int a = somar(10, 5);
 	    
-	    // Colocar conta 100 reais na conta maria
-	    contaDaMaria.depositar(58);
-	    
-	    
-	    // Ver o saldo das conta com o nome 
-	    System.out.println("Titular: " + contaDaMaria.titular);
-	    contaDaMaria.mostrarSaldoDaConta();
-	    System.out.println("--------------------------------");
-	    System.out.println("Titular: " + contaDoJoao.titular);
-	    contaDoJoao.mostrarSaldoDaConta();
-	    System.out.println("-------------------------------");
-	    
-	    // Colocar conta 100 reais na conta maria
-	    contaDaMaria.depositar(-20);
-	    
-	    
-	    // Ver o saldo das conta com o nome 
-	    System.out.println("Titular: " + contaDaMaria.titular);
-	    contaDaMaria.mostrarSaldoDaConta();
-	    System.out.println("--------------------------------");
-	    System.out.println("Titular: " + contaDoJoao.titular);
-	    contaDoJoao.mostrarSaldoDaConta();
-	    System.out.println("------------------------------");
-	    
-	   
-	    
-	    
-	    
-	    
-		
-		
+	}
+     
+	public static int somar(int valor1, int valor2) {
+		int resultado = valor1 + valor2;
+		return resultado;
 		
 	}
-
 }
